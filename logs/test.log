@@ -218,3 +218,41 @@
 [2026-01-27 20:21:14] - Land Cover Semantic Segmentation Test Logs - {test_with_metrics.py:494} - INFO - Metrics saved to: D:/Projects/land cover/Land-Cover-Semantic-Segmentation-PyTorch-main/output/metrics\test_metrics.json
 [2026-01-27 20:21:23] - Land Cover Semantic Segmentation Test Logs - {test_with_metrics.py:542} - INFO - Summary metrics saved to: D:/Projects/land cover/Land-Cover-Semantic-Segmentation-PyTorch-main/output/metrics\test_metrics_summary.csv
 [2026-01-27 20:21:23] - Land Cover Semantic Segmentation Test Logs - {test_with_metrics.py:543} - INFO - Per-class metrics saved to: D:/Projects/land cover/Land-Cover-Semantic-Segmentation-PyTorch-main/output/metrics\test_metrics_per_class.csv
+[2026-03-20 23:18:43] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-20 23:19:11] - Land Cover Semantic Segmentation Test Logs - {inference.py:177} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-20 23:19:11] - Land Cover Semantic Segmentation Test Logs - {inference.py:217} - INFO - Image preparation done successfully!
+[2026-03-20 23:19:11] - Land Cover Semantic Segmentation Test Logs - {inference.py:221} - INFO - Predicting image file N-33-60-D-c-4-2.tif...
+[2026-03-20 23:24:29] - Land Cover Semantic Segmentation Test Logs - {inference.py:257} - INFO - Total classes found in the predicted mask: ['background', 'building', 'woodland', 'water']
+[2026-03-20 23:24:30] - Land Cover Semantic Segmentation Test Logs - {inference.py:268} - INFO - Classes present in the predicted mask after filtering: ['water']
+[2026-03-20 23:24:30] - Land Cover Semantic Segmentation Test Logs - {inference.py:277} - INFO - Predicted mask written successfully!
+[2026-03-20 23:24:34] - Land Cover Semantic Segmentation Test Logs - {inference.py:291} - INFO - Prediction plot saved successfully!
+[2026-03-20 23:46:05] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-20 23:46:19] - Land Cover Semantic Segmentation Test Logs - {inference.py:177} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-20 23:46:20] - Land Cover Semantic Segmentation Test Logs - {inference.py:217} - INFO - Image preparation done successfully!
+[2026-03-20 23:50:53] - Land Cover Semantic Segmentation Test Logs - {inference.py:305} - ERROR - No images found in 'data/test/images' folder!
+[2026-03-20 23:53:17] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-20 23:53:27] - Land Cover Semantic Segmentation Test Logs - {inference.py:177} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-20 23:53:27] - Land Cover Semantic Segmentation Test Logs - {inference.py:217} - INFO - Image preparation done successfully!
+[2026-03-21 00:11:26] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:11:40] - Land Cover Semantic Segmentation Test Logs - {inference.py:177} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:11:41] - Land Cover Semantic Segmentation Test Logs - {inference.py:217} - INFO - Image preparation done successfully!
+[2026-03-21 00:14:52] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:14:58] - Land Cover Semantic Segmentation Test Logs - {inference.py:178} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:14:58] - Land Cover Semantic Segmentation Test Logs - {inference.py:218} - INFO - Image preparation done successfully!
+[2026-03-21 00:22:52] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:23:09] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:23:15] - Land Cover Semantic Segmentation Test Logs - {inference.py:180} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:23:15] - Land Cover Semantic Segmentation Test Logs - {inference.py:220} - INFO - Image preparation done successfully!
+[2026-03-21 00:23:54] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:24:04] - Land Cover Semantic Segmentation Test Logs - {inference.py:180} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:24:05] - Land Cover Semantic Segmentation Test Logs - {inference.py:220} - INFO - Image preparation done successfully!
+[2026-03-21 00:24:41] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:25:13] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:25:29] - Land Cover Semantic Segmentation Test Logs - {inference.py:180} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:25:29] - Land Cover Semantic Segmentation Test Logs - {inference.py:220} - INFO - Image preparation done successfully!
+[2026-03-21 00:37:26] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:37:34] - Land Cover Semantic Segmentation Test Logs - {inference.py:180} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:37:34] - Land Cover Semantic Segmentation Test Logs - {inference.py:220} - INFO - Image preparation done successfully!
+[2026-03-21 00:42:28] - Land Cover Semantic Segmentation Test Logs - {inference.py:148} - INFO - Total images found to test: 1
+[2026-03-21 00:43:13] - Land Cover Semantic Segmentation Test Logs - {inference.py:180} - INFO - Preparing image file N-33-60-D-c-4-2.tif...
+[2026-03-21 00:43:13] - Land Cover Semantic Segmentation Test Logs - {inference.py:220} - INFO - Image preparation done successfully!
