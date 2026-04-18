@@ -245,15 +245,35 @@ if __name__ == "__main__":
                 pred_mask = unpatchify(mask_patches, image_padded.shape[:-1])
                 pred_mask = pred_mask[:image.shape[0], :image.shape[1]]
 
-                # filter classes
+    #             # filter classes
+    #             if len(current_class_values) == 1:
+    # # ✅ Single class → binary mask
+    #                 pred_mask = (pred_mask == current_class_values[0]).astype(np.uint8) * 255
+    #             else:
+    # # ✅ Multi-class → normal behavior
+    #                 pred_masks = [(pred_mask == v) for v in current_class_values]
+    #                 pred_mask  = np.stack(pred_masks, axis=-1).astype('float')
+    #                 pred_mask  = pred_mask.argmax(2)
+
+    # filter classes
                 if len(current_class_values) == 1:
-    # ✅ Single class → binary mask
+                    # Single class → binary mask
                     pred_mask = (pred_mask == current_class_values[0]).astype(np.uint8) * 255
                 else:
-    # ✅ Multi-class → normal behavior
+                    # Multi-class → only keep pixels belonging to selected classes
+                    valid_mask = np.zeros_like(pred_mask, dtype=bool)
+                    for v in current_class_values:
+                        valid_mask |= (pred_mask == v)
+
                     pred_masks = [(pred_mask == v) for v in current_class_values]
-                    pred_mask  = np.stack(pred_masks, axis=-1).astype('float')
-                    pred_mask  = pred_mask.argmax(2)
+                    filtered   = np.stack(pred_masks, axis=-1).astype('float')
+                    filtered   = filtered.argmax(2) + 1  # 1-indexed; 0 = not selected
+
+                    pred_mask  = np.where(valid_mask, filtered, 0).astype(np.uint8)
+
+                    # Scale values for visible output (0→0, 1→85, 2→170, 3→255 for up to 3 classes)
+                    scale = 255 // len(current_class_values)
+                    pred_mask = (pred_mask * scale).astype(np.uint8)
 
                 print(f"Classes present after filtering: {current_classes}")
 
